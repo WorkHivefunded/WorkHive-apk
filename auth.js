@@ -81,9 +81,8 @@ if (loginForm) {
 
     e.preventDefault();
 
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value;
-
+    const email = document.getElementById("loginEmail").value.trim();
+const password = document.getElementById("loginPassword").value;
     try {
 
       await signInWithEmailAndPassword(
