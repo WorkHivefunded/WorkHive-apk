@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WORKHIVE</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- Header -->
+
+<header class="top-bar">
+
+<button class="menu-btn">
+
+<i class="fas fa-bars"></i>
+
+</button>
+
+<div class="brand">
+
+<img src="assets/icon.png" class="brand-logo">
+
+<h2>WORKHIVE</h2>
+
+</div>
+
+<button class="notify-btn">
+
+<i class="fas fa-bell"></i>
+
+<span class="badge">0</span>
+
+</button>
+
+</header>
+
+
+
+<!-- Welcome Card -->
+
+<section class="welcome-card">
+
+<div class="welcome-left">
+
+<h3>Welcome 👋</h3>
+
+<p id="userName">
+
+Loading...
+
+</p>
+
+<small>
+
+Choose a plan to get started.
+
+</small>
+
+</div>
+
+<div class="welcome-right">
+
+<img src="assets/logo.png">
+
+</div>
+
+</section>
+<!-- Current Plan -->
+
+<section class="plan-status-card">
+
+    <div class="plan-header">
+
+        <h3>Current Plan</h3>
+
+        <span class="status inactive" id="plan">
+    No Active Plan
+</span>
+
+    </div>
+
+    <p class="plan-text">
+
+        You have not purchased any plan yet.
+
+    </p>
+
+<div class="payment-status">
+
+<b>Payment Status :</b>
+
+<span id="paymentStatus">
+
+No Payment
+
+</span>
+
+</div>
+
+    <a href="payment.html">
+
+        <button class="purchase-btn">
+
+            <i class="fas fa-crown"></i>
+
+            Purchase Plan
+
+        </button>
+
+    </a>
+
+</section>
+
+
+
+<!-- Why Purchase -->
+
+<section class="benefits">
+
+<h3>
+
+Why Purchase a Plan?
+
+</h3>
+
+<div class="benefit-grid">
+
+<div class="benefit-item">
+
+<i class="fas fa-user-check"></i>
+
+<p>Verified Profile</p>
+
+</div>
+
+<div class="benefit-item">
+
+<i class="fas fa-headset"></i>
+
+<p>Priority Support</p>
+
+</div>
+
+<div class="benefit-item">
+
+<i class="fas fa-bolt"></i>
+
+<p>Fast Activation</p>
+
+</div>
+
+<div class="benefit-item">
+
+<i class="fas fa-shield-alt"></i>
+
+<p>Secure Account</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- Available Plans -->
+
+<section class="plans-section">
+
+    <h3>Available Plans</h3>
+
+    <!-- Starter -->
+
+    <div class="plan-card">
+
+        <div class="plan-top">
+
+            <h2>⭐ Starter</h2>
+
+            <span class="price">₹1399</span>
+
+        </div>
+
+        <ul>
+
+            <li>✔ Basic Access</li>
+
+            <li>✔ Account Verification</li>
+
+            <li>✔ Customer Support</li>
+
+        </ul>
+
+        <a href="payment.html?plan=starter">
+
+            <button class="plan-btn">
+
+                Choose Starter
+
+            </button>
+
+        </a>
+
+    </div>
+
+    <!-- Professional -->
+
+    <div class="plan-card">
+
+        <div class="plan-top">
+
+            <h2>💼 Professional</h2>
+
+            <span class="price">₹2199</span>
+
+        </div>
+
+        <ul>
+
+            <li>✔ Everything in Starter</li>
+
+            <li>✔ Priority Support</li>
+
+            <li>✔ Fast Verification</li>
+
+        </ul>
+
+        <a href="payment.html?plan=professional">
+
+            <button class="plan-btn">
+
+                Choose Professional
+
+            </button>
+
+        </a>
+
+    </div>
+
+    <!-- Premium -->
+
+    <div class="plan-card">
+
+        <div class="plan-top">
+
+            <h2>👑 Premium</h2>
+
+            <span class="price">₹2849</span>
+
+        </div>
+
+        <ul>
+
+            <li>✔ All Professional Features</li>
+
+            <li>✔ Premium Support</li>
+
+            <li>✔ Early Access</li>
+
+        </ul>
+
+        <a href="payment.html?plan=premium">
+
+            <button class="plan-btn">
+
+                Choose Premium
+
+            </button>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Announcement -->
+
+<section class="notice-card">
+
+<div class="notice-icon">
+📢
+</div>
+
+<div>
+
+<h3 id="noticeTitle">
+
+Loading...
+
+</h3>
+
+<p id="noticeMessage">
+
+Loading...
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- Featured Plan -->
+
+<section class="featured-plan">
+
+    <span class="tag">
+        Most Popular
+    </span>
+
+    <h2>
+        Professional Plan
+    </h2>
+
+    <h1>
+        ₹2199
+    </h1>
+
+    <p>
+
+        Fast Verification • Priority Support • Premium Benefits
+
+    </p>
+
+    <a href="payment.html?plan=professional">
+
+        <button>
+
+            Buy Professional
+
+        </button>
+
+    </a>
+
+</section>
+
+<section class="wallet-card">
+
+<h3>Wallet Balance</h3>
+
+<h2 id="wallet">₹0</h2>
+
+<button id="logout" class="purchase-btn">
+
+Logout
+
+</button>
+
+</section>
+
+<!-- Bottom Navigation -->
+
+<nav class="bottom-nav">
+
+<a href="dashboard.html" class="nav-item active">
+<i class="fas fa-home"></i>
+<span>Home</span>
+</a>
+
+<a href="payment.html" class="nav-item">
+<i class="fas fa-crown"></i>
+<span>Plans</span>
+</a>
+
+<a href="wallet.html" class="nav-item">
+<i class="fas fa-wallet"></i>
+<span>Wallet</span>
+</a>
+
+<a href="profile.html" class="nav-item">
+<i class="fas fa-user"></i>
+<span>Profile</span>
+</a>
+
+</nav>
+
+<script type="module" src="dashboard.js"></script>
+
+</body>
+</html>

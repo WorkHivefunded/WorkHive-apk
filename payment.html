@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Purchase Plan | WORKHIVE</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card payment-card">
+
+<img src="assets/logo.png" class="logo">
+
+<h2>Purchase Your Plan</h2>
+
+<p>Select a plan and complete payment.</p>
+
+<!-- Plan -->
+
+<label>Select Plan</label>
+
+<select id="plan">
+
+<option value="Starter">
+Starter - ₹1399
+</option>
+
+<option value="Professional">
+Professional - ₹2199
+</option>
+
+<option value="Premium">
+Premium - ₹2849
+</option>
+
+</select>
+
+<!-- Sales Code -->
+
+<label>Sales Code (Optional)</label>
+
+<input
+type="text"
+id="salesCode"
+placeholder="Enter Sales Code">
+
+<!-- UPI -->
+
+<label>UPI ID</label>
+
+<input
+type="text"
+value="workhive@upi"
+readonly>
+
+<!-- Transaction -->
+
+<label>Select Payment App</label>
+
+<button id="payNow" class="purchase-btn">
+    💳 Pay Now
+</button>
+
+<br><br>
+
+
+<label>Transaction ID</label>
+
+<input
+type="text"
+id="txnId"
+placeholder="Enter Transaction ID"
+required>
+
+<button id="submitPayment">
+
+Submit Payment
+
+</button>
+
+<p class="note">
+
+⚠️ Your plan will activate only after admin verifies the payment.
+
+</p>
+
+</div>
+
+</div>
+
+<script type="module" src="payment.js"></script>
+
+</body>
+
+</html>

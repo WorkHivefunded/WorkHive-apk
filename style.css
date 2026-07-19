@@ -1,0 +1,485 @@
+/* ===========================
+   WORKHIVE V2
+   Premium Black + Gold Theme
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0b0b0b;
+    color:#fff;
+}
+
+/* Splash Screen */
+
+.splash-body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#0b0b0b;
+}
+
+.splash-container{
+    text-align:center;
+}
+
+.logo{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    box-shadow:0 0 25px #F4C542;
+}
+
+.splash-container h1{
+    margin-top:20px;
+    color:#F4C542;
+    font-size:34px;
+    font-weight:bold;
+}
+
+.splash-container p{
+    margin-top:8px;
+    color:#ccc;
+    font-size:16px;
+}
+
+/* Loading */
+
+.loader{
+    width:45px;
+    height:45px;
+    border:5px solid #333;
+    border-top:5px solid #F4C542;
+    border-radius:50%;
+    margin:30px auto;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* Buttons */
+
+button{
+
+width:100%;
+
+padding:14px;
+
+border:none;
+
+border-radius:14px;
+
+background:#F4C542;
+
+color:#000;
+
+font-size:16px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.02);
+
+}
+
+/* Cards */
+
+.card{
+
+background:#181818;
+
+border:1px solid #2c2c2c;
+
+border-radius:18px;
+
+padding:18px;
+
+margin:15px;
+
+box-shadow:0 0 15px rgba(244,197,66,.10);
+
+}
+
+/* Input */
+
+input,select{
+
+width:100%;
+
+padding:14px;
+
+margin-top:10px;
+
+margin-bottom:18px;
+
+background:#111;
+
+border:1px solid #333;
+
+border-radius:12px;
+
+color:#fff;
+
+font-size:15px;
+
+outline:none;
+
+}
+
+input:focus{
+
+border-color:#F4C542;
+
+}
+
+/* Mobile */
+
+.container{
+
+max-width:450px;
+
+margin:auto;
+
+padding:15px;
+
+}
+/* ===========================
+   DASHBOARD UI
+=========================== */
+
+.app{
+    max-width:450px;
+    margin:auto;
+    padding:15px;
+    padding-bottom:100px;
+}
+
+/* Header */
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.menu-btn,
+.notify-btn{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:12px;
+    background:#1a1a1a;
+    color:#F4C542;
+    font-size:18px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.brand-logo{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+}
+
+.brand h2{
+    color:#F4C542;
+    font-size:20px;
+}
+
+.badge{
+    position:absolute;
+    margin-left:-8px;
+    margin-top:-8px;
+    background:red;
+    color:#fff;
+    font-size:10px;
+    padding:2px 6px;
+    border-radius:20px;
+}
+
+/* Welcome */
+
+.welcome-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#181818;
+    border-radius:18px;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.welcome-right img{
+    width:70px;
+}
+
+/* Current Plan */
+
+.plan-status-card{
+    background:#181818;
+    padding:20px;
+    border-radius:18px;
+    margin-bottom:20px;
+}
+
+.plan-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.status{
+    background:#333;
+    color:#ff5252;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.purchase-btn{
+    margin-top:15px;
+}
+/* ===========================
+   BENEFITS
+=========================== */
+
+.benefits{
+    margin-top:20px;
+}
+
+.benefits h3{
+    margin-bottom:15px;
+    color:#F4C542;
+}
+
+.benefit-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.benefit-item{
+    background:#181818;
+    border:1px solid #2b2b2b;
+    border-radius:18px;
+    padding:18px;
+    text-align:center;
+    transition:.3s;
+}
+
+.benefit-item:hover{
+    transform:translateY(-3px);
+    border-color:#F4C542;
+}
+
+.benefit-item i{
+    font-size:28px;
+    color:#F4C542;
+    margin-bottom:10px;
+}
+
+.benefit-item p{
+    font-size:14px;
+    color:#fff;
+}
+
+/* ===========================
+   PLAN CARDS
+=========================== */
+
+.plans-section{
+    margin-top:25px;
+}
+
+.plans-section h3{
+    margin-bottom:15px;
+    color:#F4C542;
+}
+
+.plan-card{
+    background:#181818;
+    border:1px solid #2b2b2b;
+    border-radius:20px;
+    padding:18px;
+    margin-bottom:18px;
+    transition:.3s;
+}
+
+.plan-card:hover{
+    border-color:#F4C542;
+}
+
+.plan-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:12px;
+}
+
+.price{
+    color:#F4C542;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.plan-card ul{
+    padding-left:20px;
+    margin:15px 0;
+}
+
+.plan-card li{
+    margin-bottom:8px;
+    color:#ddd;
+}
+
+.plan-btn{
+    width:100%;
+}
+
+/* ===========================
+   BOTTOM NAVIGATION
+=========================== */
+
+.bottom-nav{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    max-width:450px;
+    margin:auto;
+    background:#111;
+    border-top:1px solid #333;
+    display:flex;
+    justify-content:space-around;
+    padding:12px 0;
+}
+
+.nav-item{
+    text-decoration:none;
+    color:#888;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:12px;
+}
+
+.nav-item i{
+    font-size:20px;
+    margin-bottom:5px;
+}
+
+.nav-item.active{
+    color:#F4C542;
+}
+/* Notice Card */
+
+.notice-card{
+
+display:flex;
+
+gap:15px;
+
+align-items:flex-start;
+
+background:#181818;
+
+padding:18px;
+
+border-radius:18px;
+
+margin-top:20px;
+
+margin-bottom:20px;
+
+}
+
+.notice-icon{
+
+font-size:28px;
+
+}
+
+
+/* Featured Plan */
+
+.featured-plan{
+
+background:linear-gradient(135deg,#F4C542,#c99600);
+
+color:#000;
+
+padding:25px;
+
+border-radius:20px;
+
+text-align:center;
+
+margin-bottom:25px;
+
+}
+
+.featured-plan .tag{
+
+background:#000;
+
+color:#fff;
+
+padding:6px 14px;
+
+border-radius:20px;
+
+font-size:12px;
+
+}
+
+.featured-plan h2{
+
+margin-top:18px;
+
+}
+
+.featured-plan h1{
+
+font-size:42px;
+
+margin:12px 0;
+
+}
+
+.featured-plan button{
+
+background:#000;
+
+color:#F4C542;
+
+margin-top:15px;
+
+}

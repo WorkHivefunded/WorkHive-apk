@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WORKHIVE - Register</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<div class="card register-box">
+
+
+<div class="logo-area">
+
+<img src="assets/logo.png" class="logo">
+
+<h1>WORKHIVE</h1>
+
+<p>Create Your Account</p>
+
+</div>
+
+
+
+<form id="registerForm">
+
+
+<label>Full Name</label>
+
+<input 
+type="text"
+id="name"
+placeholder="Enter your name"
+required>
+
+
+
+<label>Email Address</label>
+
+<input 
+type="email"
+id="email"
+placeholder="Enter your email"
+required>
+
+
+
+<label>Mobile Number</label>
+
+<input 
+type="tel"
+id="mobile"
+placeholder="Enter mobile number"
+maxlength="10"
+required>
+
+<!-- Password -->
+
+<label>Password</label>
+
+<div class="password-box">
+
+<input 
+type="password"
+id="password"
+placeholder="Create password"
+required>
+
+</div>
+
+
+<label class="check-box">
+
+<input 
+type="checkbox"
+id="terms">
+
+<span>
+I agree to WORKHIVE Terms & Conditions
+</span>
+
+</label>
+
+
+
+<button type="submit">
+
+Create Account
+
+</button>
+
+
+
+<p class="login-text">
+
+Already have an account?
+
+<a href="login.html">
+Login
+</a>
+
+</p>
+
+
+</form>
+
+
+</div>
+
+
+</div>
+
+<script type="module" src="auth.js"></script>
+
+
+</body>
+
+</html>
