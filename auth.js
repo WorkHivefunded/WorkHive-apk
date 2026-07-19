@@ -57,8 +57,6 @@ if (registerForm) {
 
 });
 
-      alert("Registration Successful");
-
       window.location.href = "login.html";
 
     } catch (error) {
