@@ -82,12 +82,10 @@ if (loginForm) {
     e.preventDefault();
 
     const email =
-      document.getElementById("loginEmail").value;
+  document.getElementById("email").value.trim();
 
-    const password =
-      document.getElementById("loginPassword").value;
-
-    try {
+const password =
+  document.getElementById("password").value;
 
       await signInWithEmailAndPassword(
 
@@ -96,8 +94,6 @@ if (loginForm) {
         password
 
       );
-
-      window.location.href = "dashboard.html";
 
       window.location.href = "dashboard.html";
 
