@@ -81,24 +81,20 @@ if (loginForm) {
 
     e.preventDefault();
 
-    const email =
-  document.getElementById("email")
-const password =
-  document.getElementById("password")
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value;
+
+    try {
 
       await signInWithEmailAndPassword(
-
         auth,
         email,
         password
-
       );
 
       window.location.href = "dashboard.html";
 
-    }
-
-    catch (error) {
+    } catch (error) {
 
       alert(error.message);
 
