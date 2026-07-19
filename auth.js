@@ -99,7 +99,7 @@ if (loginForm) {
 
       );
 
-      alert("Login Successful");
+      window.location.href = "dashboard.html";
 
       window.location.href = "dashboard.html";
 

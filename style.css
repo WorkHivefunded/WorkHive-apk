@@ -482,4 +482,34 @@ color:#F4C542;
 
 margin-top:15px;
 
+}.logo-text{
+  font-size: 28px;
+  font-weight: 800;
+  color: #d4af37;
+  letter-spacing: 2px;
+}
+.brand-logo{
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.brand-logo .gold{
+    color: #D4AF37;
+    text-shadow: 0 0 10px rgba(212,175,55,.5);
+}
+
+.brand-logo .white{
+    color: #FFFFFF;
+}
+
+.brand-tagline{
+    text-align: center;
+    color: #BDBDBD;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
 }
