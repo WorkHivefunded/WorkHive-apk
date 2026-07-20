@@ -8,7 +8,7 @@
 
 <title>WORKHIVE - Register</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="register.css">
 
 </head>
 
@@ -22,13 +22,15 @@
 <div class="card register-box">
 
 
-<div class="logo-area">
+<div class="login-header">
 
-<img src="assets/logo.png" class="logo">
+    <div class="logo-circle">
+        WH
+    </div>
 
-<h1>WORKHIVE</h1>
+    <h1>Create Account</h1>
 
-<p>Create Your Account</p>
+    <p>Join the WorkHive Team</p>
 
 </div>
 
@@ -59,7 +61,12 @@ required>
 
 <label>Mobile Number</label>
 
-<input type="tel" id="mobile" placeholder="Mobile Number" required>
+<input 
+type="tel"
+id="mobile"
+placeholder="Enter mobile number"
+maxlength="10"
+required>
 
 <!-- Password -->
 
@@ -67,33 +74,21 @@ required>
 
 <div class="password-box">
 
-<input 
+<input
 type="password"
 id="password"
-placeholder="Create password"
+placeholder="Create Password"
 required>
 
 </div>
 
-
-<label class="check-box">
-
-<input 
-type="checkbox"
-id="terms">
-
-<span>
-I agree to WORKHIVE Terms & Conditions
-</span>
-
-</label>
-
-
+<div class="terms">
+    <input type="checkbox" required>
+    <span>I agree to Terms & Conditions</span>
+</div>
 
 <button type="submit">
-
-Create Account
-
+Create WorkHive Account
 </button>
 
 
@@ -114,8 +109,6 @@ Login
 
 </div>
 
-
-</div>
 
 <script type="module" src="auth.js"></script>
 
